@@ -4,12 +4,13 @@
 /* Mobile First */
 
 :root {
-    --titulo: hsl(234, 14%, 27%);
-    --texto: hsl(233, 4%, 43%);
+    --titulo: hsl(36, 8%, 24%);
+    --texto: hsl(33, 4%, 49%);
     --background: rgb(247, 247, 247);
 
     --verde: rgb(49, 211, 92);
     --ciano: hsl(192, 70%, 51%);
+    --azul: hsl(233, 26%, 24%);
 }
 
 * {
@@ -19,8 +20,7 @@
     Font-size: 18px;
 }
 
-body {
-    max-width: 400px;
+body, html {
     background-color: white;
     width: 100vw;
     overflow-x: hidden;
@@ -53,9 +53,9 @@ button {
 /* Header */
 
 header {
-    position: fixed;
+    position: relative;
     background-color: white;
-    width: 96vw;
+    max-width: 98vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -107,8 +107,8 @@ menu ul li {
 .cel { 
     position: absolute;
     top: -65px;
-    left: 0%;
-    width: 100vw;
+    left: 2%;
+    width: 97vw;
     overflow-x: hidden;
 }
 
@@ -123,10 +123,76 @@ menu ul li {
     background-color: var(--background);
     width: 100vw;
     margin-bottom: 80px;
+    text-align: center;
+}
+
+.sobre div > h2 {
+    text-align: center;
+    padding-top: 80px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.sobre div > h3 {
+    padding: 20px;
+    margin: auto;
+}
+
+.sobre div > p {
+    max-width: 80vw;
+    margin: auto;
 }
 
 /* Section Artigos */
 
+.artigos {
+    margin: auto;
+    width: 80vw;
+}
+
+.artigos div {
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(121, 121, 121, 0.507);
+    margin-bottom: 30px;
+}
+
 .artigos div > img {
-    width: 100vw;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-around;
+    color: white;
+    background-color: var(--azul);
+}
+
+.rp-logo {
+    padding: 10px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.social {
+    margin-top: 30px;
+}
+
+.social img {
+    width: 30px;
+    margin: 5px;
+}
+
+.descricao ul > li {
+    margin: 20px;
+    list-style: none;
+}
+
+footer  p {
+margin-top: 30px;
 }
