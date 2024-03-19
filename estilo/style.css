@@ -68,18 +68,18 @@ header > button {
     display: none;
 }
 
-menu {
+/* menu {
     position: absolute;
     top: 100px;
     left: 20px;
     width: 18rem;
     height: 30vh;
     background-color: blueviolet;
-    display: none;
+    display: block;
     justify-content: space-around;
     flex-direction: column;
     border-radius: 5px;
-}
+} */
 
 menu ul li {
     list-style: none;

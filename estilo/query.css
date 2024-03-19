@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@media (min-width: 768px) {
+
+    /* Header */
+
+    header {
+        position: relative;
+        background-color: white;
+        max-width: 98vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px;
+        align-items: center;
+        z-index: 1;
+    }
+
+    menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+
+    header > button {
+        display: block;
+    }
+
+    .burger {
+        display: none;
+    }
+
+}
+
+/* Main */
+
+/* Section Inicio */
+
+.inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.imagens {
+    order: 2;
+}
+
+.fundo {
+    width: 30rem;
+}
+
+.cel { 
+    position: absolute;
+    top: -65px;
+    left: 30%;
+    width: 30rem;
+    overflow-x: hidden;
+}
+
+.inicio h1 {
+    padding: 20px;
+    font-size: 2em;
+}
