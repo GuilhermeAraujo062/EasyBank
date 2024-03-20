@@ -82,6 +82,7 @@ header > button {
 } */
 
 menu ul li {
+    display: none;
     list-style: none;
     text-align: center;
     line-height: 46px;

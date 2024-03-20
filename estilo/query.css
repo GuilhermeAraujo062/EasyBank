@@ -32,37 +32,47 @@
         display: none;
     }
 
-}
-
 /* Main */
 
 /* Section Inicio */
 
-.inicio {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 100px;
-    text-align: center;
-}
+    .inicio {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-bottom: 100px;
+        text-align: center;
+    }
 
-.imagens {
-    order: 2;
-}
+    .desc {
+        position: relative;
+        text-align: left;
+        max-width: 30vw;
+        margin-left: 6vw;
+    }
 
-.fundo {
-    width: 30rem;
-}
+    .imagens {
+        order: 2;
+    }
 
-.cel { 
-    position: absolute;
-    top: -65px;
-    left: 30%;
-    width: 30rem;
-    overflow-x: hidden;
-}
+    .fundo {
+        width: 500px;
+    }
 
-.inicio h1 {
-    padding: 20px;
-    font-size: 2em;
+    .cel {
+        width: 500px;
+    }
+
+    .imagens { 
+        position: absolute;
+        top: -65px;
+        right: 0px;
+        overflow-x: hidden;
+    }
+
+    .inicio h1 {
+        padding: 20px;
+        font-size: 2em;
+    }
+
 }
