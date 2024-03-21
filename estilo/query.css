@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (min-width: 768px) {
+@media (min-width: 872px) {
 
     /* Header */
 
@@ -75,4 +75,52 @@
         font-size: 2em;
     }
 
+/* Sobre */
+
+    .sobre {
+        background-color: var(--background);
+        width: 100vw;
+        margin-bottom: 80px;
+        text-align: left;
+    }
+
+    .sobre-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5rem;
+    }
+
+    .sobre div > h2 {
+        text-align: center;
+        padding-top: 80px;
+        max-width: 300px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .sobre div > h3 {
+        padding: 20px;
+        margin: auto;
+    }
+
+    .sobre div > p {
+        max-width: 80vw;
+        max-width: 800px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .infos > div {
+        padding: 20px;
+        width: 15rem;
+    }
+    
 }
