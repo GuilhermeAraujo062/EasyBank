@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/reset.css">
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/query.css">
     <title>EasyBank</title>
@@ -14,11 +15,11 @@
         <aside class="sidebar">
             <menu>
                 <ul>
-                    <li>Home</li>
-                    <li>Sobre</li>
-                    <li>Contato</li>
-                    <li>Blog</li>
-                    <li>Carreiras</li>
+                    <li class="itens">Home</li>
+                    <li class="itens">Sobre</li>
+                    <li class="itens">Contato</li>
+                    <li class="itens">Blog</li>
+                    <li class="itens">Carreiras</li>
                 </ul>
             </menu>
         </aside>
@@ -77,32 +78,31 @@
         <section class="artigos">
             <h2>Artigos</h2>
 
-            <div>
-                <img src="images/image-currency.jpg">
-                <p>Por Claire Robinson</p>
-                <h3>Receba dinheiro em qualquer moeda sem taxas</h3>
-                <p>O mundo está ficando menor e estamos nos tornando mais móveis. Então, por que você deveria ser obrigado a receber dinheiro em apenas uma...</p>
-            </div>
-
-            <div>
-                <img src="images/image-restaurant.jpg">
-                <p>Por Wilson Hutton</p>
-                <h3>Dê a si mesmo um agrado sem se preocupar com dinheiro</h3>
-                <p>Nossa funcionalidade de orçamento simples permite que você separe seus gastos e estabeleça limites realistas a cada mês. Isso significa que você...</p>
-            </div>
-
-            <div>
-                <img src="images/image-plane.jpg">
-                <p>Por Wilson Hutton</p>
-                <h3>Leve seu cartão Easybank para onde quer que vá</h3>
-                <p>Queremos que você aproveite suas viagens. É por isso que não cobramos taxas em compras no exterior. Até mesmo mostraremos a você...</p>
-            </div>
-
-            <div>
-                <img src="images/image-confetti.jpg">
-                <p>Por Claire Robinson</p>
-                <h3>Nossas contas Beta exclusivas por convite estão agora ativas!</h3>
-                <p>Depois de muito trabalho árduo de toda a equipe, estamos animados em lançar nossa versão beta fechada. É fácil solicitar um convite através do site...</p>
+            <div class="container-artigos">
+                <div>
+                    <img src="images/image-currency.jpg">
+                    <p>Por Claire Robinson</p>
+                    <h3>Receba dinheiro em qualquer moeda sem taxas</h3>
+                    <p>O mundo está ficando menor e estamos nos tornando mais móveis. Então, por que você deveria ser obrigado a receber dinheiro em apenas uma...</p>
+                </div>
+                <div>
+                    <img src="images/image-restaurant.jpg">
+                    <p>Por Wilson Hutton</p>
+                    <h3>Dê a si mesmo um agrado sem se preocupar com dinheiro</h3>
+                    <p>Nossa funcionalidade de orçamento simples permite que você separe seus gastos e estabeleça limites realistas a cada mês. Isso significa que você...</p>
+                </div>
+                <div>
+                    <img src="images/image-plane.jpg">
+                    <p>Por Wilson Hutton</p>
+                    <h3>Leve seu cartão Easybank para onde quer que vá</h3>
+                    <p>Queremos que você aproveite suas viagens. É por isso que não cobramos taxas em compras no exterior. Até mesmo mostraremos a você...</p>
+                </div>
+                <div>
+                    <img src="images/image-confetti.jpg">
+                    <p>Por Claire Robinson</p>
+                    <h3>Nossas contas Beta exclusivas por convite estão agora ativas!</h3>
+                    <p>Depois de muito trabalho árduo de toda a equipe, estamos animados em lançar nossa versão beta fechada. É fácil solicitar um convite através do site...</p>
+                </div>
             </div>
         </section>
     </main>
@@ -120,13 +120,13 @@
         </div>
 
         <div class="descricao">
-            <ul>
-                <li>Sobre Nós</li>
-                <li>Contato</li>
-                <li>Blog</li>
-                <li>Carreiras</li>
-                <li>Suporte</li>
-                <li>Política de Privacidade</li>
+            <ul class="grid-container">
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Carreiras</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
             </ul>
         </div>
         
@@ -137,9 +137,5 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <!-- <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Guilherme Araujo</a>.
-      </div> -->
 </body>
 </html>

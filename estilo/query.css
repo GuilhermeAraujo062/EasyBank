@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+:root {
+    --titulo: hsl(36, 8%, 24%);
+    --texto: hsl(33, 4%, 49%);
+    --background: rgb(247, 247, 247);
+
+    --verde: rgb(49, 211, 92);
+    --ciano: hsl(192, 70%, 51%);
+    --azul: hsl(233, 26%, 24%);
+}
+
 @media (min-width: 872px) {
 
     /* Header */
@@ -26,6 +36,19 @@
 
     header > button {
         display: block;
+    }
+
+    .itens {
+        display: block;
+        list-style: none;
+        text-align: center;
+        line-height: 46px;
+    }
+
+    .itens:hover {
+        cursor: pointer;
+        border-radius: 1px;
+        box-shadow: 0px 4px 0px var(--verde);
     }
 
     .burger {
@@ -71,7 +94,7 @@
     }
 
     .inicio h1 {
-        padding: 20px;
+        padding: 20px 0px;
         font-size: 2em;
     }
 
@@ -99,7 +122,7 @@
     }
 
     .sobre div > h3 {
-        padding: 20px;
+        padding: 20px 0px;
         margin: auto;
     }
 
@@ -122,5 +145,87 @@
         padding: 20px;
         width: 15rem;
     }
+
+/* Artigos */
     
+    .artigos {
+        text-align: left;
+        margin: auto;
+        width: 80vw;
+    }
+
+    .container-artigos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .container-artigos > div {
+        border-radius: 10px;
+        box-shadow: 0px 2px 2px rgba(121, 121, 121, 0.507);
+        margin-bottom: 30px;
+        padding-bottom: 150px;
+    }
+
+    .container-artigos > div > h3 {
+        padding: 16px;
+    }
+
+    .container-artigos > div > p {
+        padding: 16px;
+    } 
+
+    .container-artigos div > img {
+        max-width: 100%;
+        height: 40%;
+        border-radius: 10px;
+    }
+
+/* Footer */
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        color: white;
+        background-color: var(--azul);
+    }
+
+    .rp-logo {
+        padding: 10px;
+        margin: 0px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    .social {
+        margin-top: 30px;
+    }
+
+    .social img {
+        width: 30px;
+        margin: 5px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .descricao ul > li {
+        margin: 0px;
+        list-style: none;
+        color: rgb(202, 202, 202);
+    }
+
+    footer  p {
+    margin-top: 30px;
+    }
+
 }

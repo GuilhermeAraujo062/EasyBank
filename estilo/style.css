@@ -1,8 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Mobile First */
-
 :root {
     --titulo: hsl(36, 8%, 24%);
     --texto: hsl(33, 4%, 49%);
@@ -13,42 +11,7 @@
     --azul: hsl(233, 26%, 24%);
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    Font-size: 18px;
-}
-
-body, html {
-    background-color: white;
-    width: 100vw;
-    overflow-x: hidden;
-    text-align: center;
-}
-
-h1, h2, h3 {
-    color: var(--titulo);
-    padding-bottom: 20px;
-}
-
-h2 {
-    font-size: 1.5em;
-}
-
-p {
-    color: var(--texto);
-    padding-bottom: 50px;
-}
-
-button {
-    background: linear-gradient(98deg, rgb(49, 211, 92) 0%, hsl(192, 70%, 51%) 100%);
-    color: white;
-    border: none;
-    font-size: 0.8em;
-    border-radius: 17px;
-    padding: 15px;
-}
+/* Mobile First */
 
 /* Header */
 
@@ -59,6 +22,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     z-index: 1;
     
@@ -68,20 +32,15 @@ header > button {
     display: none;
 }
 
-/* menu {
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    width: 18rem;
-    height: 30vh;
-    background-color: blueviolet;
-    display: block;
-    justify-content: space-around;
-    flex-direction: column;
-    border-radius: 5px;
-} */
+.burger {
+    padding: 20px;
+}
 
-menu ul li {
+.burger:hover {
+    cursor: pointer;
+}
+
+.itens {
     display: none;
     list-style: none;
     text-align: center;
@@ -151,13 +110,13 @@ menu ul li {
     width: 80vw;
 }
 
-.artigos div {
+.container-artigos > div {
     border-radius: 10px;
     box-shadow: 0px 2px 2px rgba(121, 121, 121, 0.507);
     margin-bottom: 30px;
 }
 
-.artigos div > img {
+.container-artigos div > img {
     width: 100%;
     border-radius: 10px;
 }
@@ -192,6 +151,17 @@ footer {
 .descricao ul > li {
     margin: 20px;
     list-style: none;
+    color: rgb(202, 202, 202);
+}
+
+.descricao ul > li > a {
+    color: rgb(202, 202, 202);
+    text-decoration: none;
+}
+
+.descricao ul > li > a:hover{
+    color: white;
+    text-decoration: underline;
 }
 
 footer  p {
