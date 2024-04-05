@@ -6,25 +6,26 @@
     <link rel="stylesheet" href="estilo/reset.css">
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/query.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <title>EasyBank</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div class="logo"><img src="images/logo.svg" alt="Logo"></div>
 
         <aside class="sidebar">
             <menu>
-                <ul>
-                    <li class="itens">Home</li>
-                    <li class="itens">Sobre</li>
-                    <li class="itens">Contato</li>
-                    <li class="itens">Blog</li>
-                    <li class="itens">Carreiras</li>
+                <ul class="itens">
+                    <li>Home</li>
+                    <li>Sobre</li>
+                    <li>Contato</li>
+                    <li>Blog</li>
+                    <li>Carreiras</li>
                 </ul>
             </menu>
         </aside>
 
-        <div class="burger"><img src="images/icon-hamburger.svg"></div>
+        <div class="burger"><img src="images/icon-hamburger.svg" id="img-menu"></div>
 
         <button class="btn-convite">Solicitar Convite</button>
             
@@ -111,11 +112,11 @@
         <div>
             <img src="images/logo.svg" alt="Logo" class="rp-logo">
             <div class="social">
-                <img src="images/icon-facebook.svg" alt="Facebook">
-                <img src="images/icon-youtube.svg" alt="Youtube">
-                <img src="images/icon-twitter.svg" alt="X">
-                <img src="images/icon-pinterest.svg" alt="Pinterest">
-                <img src="images/icon-instagram.svg" alt="Instagram">
+                <img src="images/icon-facebook.svg" alt="Facebook" class="social-logo">
+                <img src="images/icon-youtube.svg" alt="Youtube" class="social-logo">
+                <img src="images/icon-twitter.svg" alt="X" class="social-logo">
+                <img src="images/icon-pinterest.svg" alt="Pinterest" class="social-logo">
+                <img src="images/icon-instagram.svg" alt="Instagram" class="social-logo">
             </div>
         </div>
 
